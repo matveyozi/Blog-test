@@ -1,0 +1,35 @@
+.header {
+    margin-bottom: 45px;
+    padding-top: 92px;
+	
+    &__logo {
+        width: 136px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+		padding-left: 5.5px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+    }
+    &__btns {
+        position: absolute;
+        display: flex;
+        right: 58px;
+        top: 79px;
+    }
+    &__link {
+        margin-right: 7px;
+        
+        &:last-child {
+            margin-right: 0;
+            padding: 11px 32px 11px 32px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.text {
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 16px;
+	font-weight: 400;
+	&_fz12 {
+		font-size: 12px;
+	}
+	&_fz14 {
+		font-size: 14px;
+	}
+	&_fz24 {
+		font-size: 24px;
+	}
+	&_bold {
+		font-weight: 700;
+		color: #FF8D00;
+	}
+	&_gray {
+		color: #889099;
+	}
+
+	
+	
+}

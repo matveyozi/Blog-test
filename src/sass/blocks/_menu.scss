@@ -1,0 +1,66 @@
+.humburger {
+    display: none;
+}
+.menu {
+    min-width: 426px;
+    margin-left: 243.5px;
+    &__close {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__link {
+        position: relative;
+        margin-right: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        
+		padding-top: 1px;
+        a {
+            color: #323642;
+        }
+        &:last-child {
+            margin-right: 0;
+			&::before {
+				right: -14px;
+			}
+            
+        }
+        &:hover {
+            
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 115%;
+                height: 3px;
+                background: $main-color;
+                bottom: -8px;
+            }
+        }
+		&:nth-child(2) {
+			margin-right: 31px;
+			&::before {
+				display: none;
+			}
+		}
+		&:nth-child(3) {
+			margin-right: 48px;
+		}
+        &::before {
+			content: '';
+            display: block;
+            border: 5px solid transparent;
+            border-top: 5px solid #323642;
+			position: absolute;
+			right: -18px;
+			top: 6px;
+        }
+    }
+}

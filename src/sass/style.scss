@@ -1,0 +1,52 @@
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;500;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+li {
+    list-style: none;
+}
+@import 'blocks/buttons';
+@import 'blocks/text';
+@import 'blocks/title';
+@import 'blocks/alert';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/tags';
+@import 'blocks/main';
+@import 'blocks/news';
+@import 'blocks/aside';
+@import 'blocks/price';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+
+@import 'blocks/media';
+
+

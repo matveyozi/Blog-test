@@ -1,0 +1,39 @@
+.alert {
+	position: fixed;
+    height: 40px;
+    background: #22252E;
+	width: 100%;
+    z-index: 5;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 611px;
+        padding-top: 8px;
+        margin: 0 auto;
+        
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        &-icon {
+            margin-right: 5px;
+        }
+        &-descr {
+            a {
+                text-transform: none;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 21px;
+        top: 13px;
+    }
+    &__off {
+        display: none;
+    }
+}

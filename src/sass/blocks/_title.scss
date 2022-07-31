@@ -1,0 +1,21 @@
+.title {
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 34px;
+    color: #22252E;
+    &_fz14 {
+        font-size: 14px;
+    }
+    &_fz18 {
+        font-size: 18px;
+    }
+	&_fz24 {
+		font-size: 24px;
+	}
+    &_fz32 {
+        font-size: 32px;
+    }
+    &_fz48 {
+        font-size: 48px;
+    }
+}

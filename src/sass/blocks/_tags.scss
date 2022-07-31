@@ -1,0 +1,64 @@
+.tags {
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    padding-top: 30px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 786px 414px;
+        background: #F7F7F7;
+        border-radius: 4px;
+        padding-top: 24px;
+        padding-bottom: 21px;
+    }
+
+    &__items {
+        display: flex;
+
+
+        &-title {
+            width: 44px;
+            margin-right: 43px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 1px;
+            color: #323642;
+            padding-left: 32px;
+        }
+
+        &-links {
+            display: flex;
+
+            a {
+                color: $main-color;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: 0.8px;
+            }
+
+        }
+
+        &-link {
+            margin-right: 36px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 33px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323642;
+
+        &-item {
+            &:first-child {
+                margin-right: 35px;
+            }
+        }
+    }
+}

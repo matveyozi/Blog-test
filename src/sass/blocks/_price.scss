@@ -1,0 +1,194 @@
+.price {
+    height: 700px;
+    background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+    padding-top: 100px;
+
+    &__title {
+        text-align: center;
+        letter-spacing: -0.5px;
+        line-height: 64px;
+        color: #FFFFFF;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        grid-template-rows: auto;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 36px;
+    }
+
+    &__item {
+        min-height: 340px;
+        background: #FFFFFF;
+        border: 1px solid #EBECED;
+        border-radius: 6px;
+        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.501961));
+
+
+        &:nth-child(2) {
+
+            border: 4px solid #4CB649;
+            border-radius: 4px;
+            min-height: 380px;
+
+            .title {
+                margin-top: 59px;
+            }
+
+            .price__item-descr {
+                margin-top: 35px;
+            }
+
+            .price__btn {
+                margin-top: 24px;
+                background: linear-gradient(0deg, #4CB649 0%, #5DDF5A 100%);
+
+            }
+        }
+
+        &:last-child {
+            .price__item-descr {
+                margin-top: 35px;
+            }
+
+            .price__btn {
+                margin-top: 14px;
+            }
+        }
+
+        &-title {
+            text-align: center;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            line-height: 18px;
+            font-weight: 500;
+            color: #323642;
+            margin-top: 48px;
+
+
+            &::after {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 24px;
+                margin: 0 auto;
+                background-color: $main-color;
+                margin-top: 12px;
+            }
+        }
+
+        &-sale {
+            margin: 0 auto;
+            display: flex;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 32px;
+            color: #22252E;
+            margin-top: 16px;
+            width: 176px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                margin: 0 auto;
+                width: 200px;
+                height: 1px;
+                background: #EBECED;
+                bottom: -10px;
+            }
+        }
+
+        &-top {
+            align-self: flex-start;
+            padding-top: 10px;
+            margin-right: 8px;
+        }
+
+        &-main {
+            font-size: 56px;
+            line-height: 66px;
+            letter-spacing: -1.5px;
+            margin-right: 4px;
+        }
+
+        &-bot {
+            align-self: end;
+        }
+
+        &-descr {
+            margin-top: 46px;
+            text-align: center;
+            line-height: 25px;
+            color: #323642;
+
+            .line {
+                text-decoration-line: line-through;
+                color: #F24458;
+                margin-right: 8px;
+            }
+
+            .text_bold {
+                font-weight: 700;
+                color: #323642;
+            }
+        }
+
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 0;
+        background-color: #FFFFFF;
+        width: 205px;
+        height: 40px;
+    }
+
+    &__pay {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: space-between;
+        width: 916px;
+
+        &-title {
+            line-height: 28px;
+            color: #FFFFFF;
+
+        }
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__links {
+        display: flex;
+		
+		width: 455px;
+		margin: 0 auto;
+		margin-top: 8px;
+        &-item {
+            display: flex;
+			align-items: center;
+			margin-right: 45px;
+			&:last-child {
+				margin-right: 0;
+			}
+        }
+
+        &-text {
+            line-height: 18px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: $main-color;
+			margin-right: 17px;
+        }
+    }
+}

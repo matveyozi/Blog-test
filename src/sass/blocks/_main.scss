@@ -1,0 +1,8 @@
+.main {
+	margin-top: 40px;
+	padding-bottom: 70px;
+    &__items {
+        display: grid;
+        grid-template-columns: 800px 400px;
+    }
+}
