@@ -415,6 +415,12 @@
 
     }
 
+    .menu {
+        &__block {
+            width: 60%;
+        }
+    }
+
     .alert {
         &__wrapper {
             width: 317px;
